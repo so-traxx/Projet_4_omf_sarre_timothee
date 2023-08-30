@@ -1,3 +1,7 @@
+// Importation des polices de style du site "Roboto" et Shrikhand""
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap');
+
+// Importation des différentes pages de style scss pour compilation en css en un seul fichier
 @import "_variables.scss";
 @import "_mixins.scss";
 @import "_animations.scss";
