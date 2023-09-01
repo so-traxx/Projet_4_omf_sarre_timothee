@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
 * {
   font-family: "Roboto", sans-serif;
-  text-decoration: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   line-height: normal;
+  text-decoration: none;
 }
 
 .header {
@@ -56,7 +56,7 @@
 }
 .hero-header__title {
   width: 73%;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 .hero-header__text {
@@ -80,4 +80,68 @@
   font-size: 1rem;
   font-weight: 500;
   color: white;
+}
+
+.functioning {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 26px;
+  padding: 48px 20px 68px 32px;
+}
+.functioning__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.functioning .functioning__cards {
+  padding: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 72px;
+  border-radius: 20px;
+  background-color: #F6F6F6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.card__circle-number {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  position: relative;
+  right: 15px;
+}
+.card__first-icon {
+  width: 13px;
+  height: 20px;
+}
+.card__second-icon {
+  width: 16px;
+  height: 16px;
+}
+.card__third-icon {
+  width: 18px;
+  height: 18px;
+  color: #9356DC;
+}
+.card__text {
+  font-size: 1rem;
+  font-weight: 500;
+  padding-left: 27px;
+}
+
+.card__first-icon,
+.card__second-icon {
+  color: #7E7E7E;
 }/*# sourceMappingURL=style.css.map */

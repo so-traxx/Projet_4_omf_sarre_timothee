@@ -1,10 +1,10 @@
 * {
     font-family: 'Roboto', sans-serif;
-    text-decoration: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     line-height: normal;
+    text-decoration: none;
 }
 
 //header
@@ -31,12 +31,12 @@
      &--icon {
         width: 12px;
         height: 16px;
-        color: #353535;
+        color: $dark-grey;
      }
      &--text{
         font-size: 1rem;
         font-weight: 500;
-        color: #353535;
+        color: $dark-grey;
      }
  }
 
@@ -53,18 +53,17 @@
     padding: 39px 0px 57px 0px;
     &__title{
         width: 73%;
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 700;
     }
     &__text{
         width: 84%;
         font-size: 1.1rem;
         font-weight: 300;
-        color: #353535;
+        color: $dark-grey;
         margin-bottom: 9px;
     }
  }
-
 .hero-header__btn {
     @include flex-center;
     @include base-button;
@@ -73,4 +72,65 @@
     font-size: 1rem;
     font-weight: 500;
     color: $white-content;
+}
+
+//section fonctionnement
+
+.functioning {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 26px;
+    padding: 48px 20px 68px 32px;
+    &__title{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
+.functioning .functioning__cards {
+    padding: 0;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 72px;
+    border-radius: 20px;
+    background-color: $section-background;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    &__circle-number{
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: $primary-color;
+        color: $white-content;
+        @include flex-center;
+        flex-shrink: 0;
+        font-size: 0.9rem;
+        font-weight: 500;
+        position: relative;
+        right: 15px;
+    }
+    &__first-icon {
+        width: 13px;
+        height: 20px;
+    }
+    &__second-icon {
+        width: 16px;
+        height: 16px;
+    }
+    &__third-icon {
+        width: 18px;
+        height: 18px;
+        color: $primary-color;
+    }
+    &__text {
+        font-size: 1rem;
+        font-weight: 500;
+        padding-left: 27px;
+    }
+}
+.card__first-icon,
+.card__second-icon {
+    color: $icon-grey;
 }
