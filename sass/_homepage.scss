@@ -7,6 +7,9 @@
     text-decoration: none;
 }
 
+a:not([class]) {
+    color: black;
+}
 //header
 
 .header {
@@ -22,18 +25,18 @@
        position: relative;
     }
 }
-.header__location{
+.header-location{
     width: 100%;
     height: 50px;
     @include flex-center;
      gap: 17px;
      background-color: #EAEAEA;
-     &--icon {
+     &__icon {
         width: 12px;
         height: 16px;
         color: $dark-grey;
      }
-     &--text{
+     &__text{
         font-size: 1rem;
         font-weight: 500;
         color: $dark-grey;
@@ -43,18 +46,14 @@
  //section Hero-Header
 
  .hero-header {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
-    width: 100%;
     background-color: $section-background;
     text-align: center;
     gap: 18px;
     padding: 39px 0px 57px 0px;
     &__title{
-        width: 73%;
-        font-size: 1.5rem;
-        font-weight: 700;
+        @include section-title;
     }
     &__text{
         width: 84%;
@@ -77,9 +76,7 @@
 //section fonctionnement
 
 .functioning {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    @include flex-column;
     gap: 26px;
     padding: 48px 20px 68px 32px;
     &__title{
@@ -112,16 +109,13 @@
         right: 15px;
     }
     &__first-icon {
-        width: 13px;
-        height: 20px;
+        font-size: 20px;
     }
     &__second-icon {
-        width: 16px;
-        height: 16px;
+        font-size: 16px;
     }
     &__third-icon {
-        width: 18px;
-        height: 18px;
+        font-size: 18px;
         color: $primary-color;
     }
     &__text {
@@ -133,4 +127,78 @@
 .card__first-icon,
 .card__second-icon {
     color: $icon-grey;
+}
+
+//Section restaurants
+
+.resto {
+    @include flex-column;
+    padding: 54px 20px 66px 20px;
+    gap: 18px;
+    background-color: $section-background;
+    &__title{
+        @include section-title;
+    }
+    &__group-1,
+    &__group-2 {
+        padding: 0px;
+    }
+}
+
+.resto-card{
+    @include flex-column;
+    height: 251px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+    position: relative;
+    &__img {
+       width: 100%;
+       height: 174px;
+       border-top-left-radius: 15px;
+       border-top-right-radius: 15px;
+       object-fit: cover;       
+    }
+    &--banner-new {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 29px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        background-color: $tertiary-color;
+        color: #008766;
+        position: absolute;
+        right: 12px;
+        top: 12px;
+
+    }
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 25px 12px 13px;
+    &__title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    &__text {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    &__heart{
+        display: flex;
+        position: relative;
+        height: 22px;
+        font-size: 22px;
+    }
+}
+
+.card-content__heart {
+    &--liked{
+        position: absolute;
+        color: transparent;
+    }
 }

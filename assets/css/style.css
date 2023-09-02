@@ -8,6 +8,10 @@
   text-decoration: none;
 }
 
+a:not([class]) {
+  color: black;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -24,7 +28,7 @@
   position: relative;
 }
 
-.header__location {
+.header-location {
   width: 100%;
   height: 50px;
   display: flex;
@@ -33,12 +37,12 @@
   gap: 17px;
   background-color: #EAEAEA;
 }
-.header__location--icon {
+.header-location__icon {
   width: 12px;
   height: 16px;
   color: #353535;
 }
-.header__location--text {
+.header-location__text {
   font-size: 1rem;
   font-weight: 500;
   color: #353535;
@@ -47,8 +51,8 @@
 .hero-header {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
+  align-items: center;
   background-color: #F6F6F6;
   text-align: center;
   gap: 18px;
@@ -123,16 +127,13 @@
   right: 15px;
 }
 .card__first-icon {
-  width: 13px;
-  height: 20px;
+  font-size: 20px;
 }
 .card__second-icon {
-  width: 16px;
-  height: 16px;
+  font-size: 16px;
 }
 .card__third-icon {
-  width: 18px;
-  height: 18px;
+  font-size: 18px;
   color: #9356DC;
 }
 .card__text {
@@ -144,4 +145,79 @@
 .card__first-icon,
 .card__second-icon {
   color: #7E7E7E;
+}
+
+.resto {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 54px 20px 66px 20px;
+  gap: 18px;
+  background-color: #F6F6F6;
+}
+.resto__title {
+  width: 73%;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.resto__group-1, .resto__group-2 {
+  padding: 0px;
+}
+
+.resto-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 251px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.resto-card__img {
+  width: 100%;
+  height: 174px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.resto-card--banner-new {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 29px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: #99E2D0;
+  color: #008766;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 25px 12px 13px;
+}
+.card-content__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.card-content__text {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.card-content__heart {
+  display: flex;
+  position: relative;
+  height: 22px;
+  font-size: 22px;
+}
+
+.card-content__heart--liked {
+  position: absolute;
+  color: transparent;
 }/*# sourceMappingURL=style.css.map */
