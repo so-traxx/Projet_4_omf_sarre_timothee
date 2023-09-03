@@ -200,5 +200,7 @@ a:not([class]) {
     &--liked{
         position: absolute;
         color: transparent;
+        transition: all 500ms;
+        cursor: pointer;
     }
 }

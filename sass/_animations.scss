@@ -1,0 +1,8 @@
+//animation du coeur
+
+.card-content__heart--liked {
+    &:hover{
+    transform: scale(1);
+    color: mix($primary-color,$secondary-color,60%);
+    }
+  }

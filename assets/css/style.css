@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
+.card-content__heart--liked:hover {
+  transform: scale(1);
+  color: #be64db;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -220,6 +225,8 @@ a:not([class]) {
 .card-content__heart--liked {
   position: absolute;
   color: transparent;
+  transition: all 500ms;
+  cursor: pointer;
 }
 
 .footer {
