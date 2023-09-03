@@ -127,13 +127,13 @@ a:not([class]) {
   right: 15px;
 }
 .card__first-icon {
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 .card__second-icon {
-  font-size: 16px;
+  font-size: 1rem;
 }
 .card__third-icon {
-  font-size: 18px;
+  font-size: 1.2rem;
   color: #9356DC;
 }
 .card__text {
@@ -214,10 +214,38 @@ a:not([class]) {
   display: flex;
   position: relative;
   height: 22px;
-  font-size: 22px;
+  font-size: 1.4rem;
 }
 
 .card-content__heart--liked {
   position: absolute;
   color: transparent;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 22px 25px;
+  gap: 16px;
+  background-color: #353535;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  gap: 7px;
+  color: white;
+}
+.footer-content__icon-size {
+  font-size: 0.8rem;
+  padding-right: 5px;
+}
+.footer-content__link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

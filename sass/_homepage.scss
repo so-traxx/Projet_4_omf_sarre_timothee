@@ -109,13 +109,13 @@ a:not([class]) {
         right: 15px;
     }
     &__first-icon {
-        font-size: 20px;
+        font-size: 1.3rem;
     }
     &__second-icon {
-        font-size: 16px;
+        font-size: 1rem;
     }
     &__third-icon {
-        font-size: 18px;
+        font-size: 1.2rem;
         color: $primary-color;
     }
     &__text {
@@ -192,7 +192,7 @@ a:not([class]) {
         display: flex;
         position: relative;
         height: 22px;
-        font-size: 22px;
+        font-size: 1.4rem;
     }
 }
 
