@@ -1,0 +1,25 @@
+//footer
+
+.footer{
+    @include flex-column;
+    height: auto;
+    padding: 22px 25px;
+    gap: 16px;
+    background-color: $dark-grey; 
+}
+
+.footer-content {
+    @include flex-column;
+    padding: 0;
+    gap: 7px;
+    color: $white-content;
+&__icon-size{
+    font-size: 0.8rem;
+    padding-right: 5px;
+}
+&__link{
+    font-size: 1rem;
+    font-weight: 500;
+    color: $white-content;
+}
+}
