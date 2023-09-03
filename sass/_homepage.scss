@@ -71,6 +71,7 @@ a:not([class]) {
     font-size: 1rem;
     font-weight: 500;
     color: $white-content;
+    transition: all 300ms;
 }
 
 //section fonctionnement
