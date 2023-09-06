@@ -190,15 +190,13 @@ a:not([class]) {
         font-size: 1rem;
         font-weight: 300;
     }
-    &__heart{
-        display: flex;
-        position: relative;
-        height: 22px;
-        font-size: 1.4rem;
-    }
 }
 
-.card-content__heart {
+.heart {
+    display: flex;
+    position: relative;
+    height: 22px;
+    font-size: 1.4rem;
     &--liked{
         position: absolute;
         color: transparent;
