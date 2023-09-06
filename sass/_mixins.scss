@@ -11,10 +11,14 @@
 }
 
 @mixin base-button {
+    font-size: 1rem;
+    font-weight: 500;
     height: 50px;
     border-radius: 25px;
+    color: $white-content;
     background: linear-gradient(0deg, $primary-color -11.44%, $secondary-color 123.93%);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25); 
+    transition: all 300ms;
 }
 
 @mixin section-title {

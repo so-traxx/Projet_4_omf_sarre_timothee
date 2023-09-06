@@ -39,3 +39,62 @@
     font-size: 1.75rem;
     }
 }
+
+//différentes sections menu
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    &__title {
+        font-size: 1rem;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    &__btn {
+        @include base-button;
+        @include flex-center;
+        width: 186px;
+        padding: 16px 49px;
+    }
+}
+.menu-content__title::after {
+    content: "";
+    display: flex;
+    background-color: $tertiary-color;
+    width: 40px;
+    height: 3px;
+    margin-top: 5px;
+}
+.menu-card {
+    @include base-card;
+    @include flex-column;
+    height: 69px;
+    padding: 15px;
+    gap: 5px;
+    &__title{
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    &__text{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__subtitle{
+        font-size: 0.93rem;
+        font-weight: 300;
+    }
+    &__price{
+        font-size: 0.93rem;
+        font-weight: 700;
+    }
+}
+.menu-card__title,
+.menu-card__subtitle,
+.menu-card__price {
+    text-overflow: ellipsis;
+}
+.button {
+    display: flex;
+    justify-content: center;
+}
