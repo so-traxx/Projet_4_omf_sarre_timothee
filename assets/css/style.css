@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
-.card-content__heart--liked:hover {
+.heart--liked:hover {
   transform: scale(1);
   color: #be64db;
 }
@@ -226,18 +226,60 @@ a:not([class]) {
   font-size: 1rem;
   font-weight: 300;
 }
-.card-content__heart {
+
+.heart {
   display: flex;
   position: relative;
   height: 22px;
   font-size: 1.4rem;
 }
-
-.card-content__heart--liked {
+.heart--liked {
   position: absolute;
   color: transparent;
   transition: all 500ms;
   cursor: pointer;
+}
+
+.header__logo--content-resto {
+  gap: 42px;
+  padding: 14px 89px 13px 17px;
+}
+
+.header__icon-return {
+  font-size: 1.9rem;
+  color: #353535;
+}
+
+.header__img {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #F6F6F6;
+  gap: 40px;
+  padding: 32px 13px 40px 13px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  position: relative;
+  z-index: 1;
+  margin-top: -55px;
+}
+
+.main-title {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 0px 4px;
+}
+.main-title--title-style {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.75rem;
 }
 
 .footer {
