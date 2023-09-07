@@ -71,7 +71,6 @@
     @include flex-column;
     height: 69px;
     padding: 15px;
-    gap: 5px;
     &__title{
         font-size: 1.1rem;
         font-weight: 500;
@@ -90,9 +89,10 @@
     }
 }
 .menu-card__title,
-.menu-card__subtitle,
-.menu-card__price {
+.menu-card__subtitle {
+    overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .button {
     display: flex;
