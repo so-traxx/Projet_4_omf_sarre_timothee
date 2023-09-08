@@ -14,6 +14,18 @@
   transform: scale(1.05);
 }
 
+.menu-card:hover .menu-card__checked {
+  margin-right: 0;
+}
+
+@keyframes appear-delay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -268,7 +280,6 @@ a:not([class]) {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   position: relative;
-  z-index: 1;
   margin-top: -55px;
 }
 
@@ -323,18 +334,48 @@ a:not([class]) {
   background-color: white;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   display: flex;
-  flex-direction: column;
-  width: 100%;
   height: 69px;
-  padding: 15px;
+  cursor: pointer;
+  animation: appear-delay 2000ms ease-in-out both;
+}
+.menu-card--1 {
+  animation-delay: 200ms;
+}
+.menu-card--2 {
+  animation-delay: 400ms;
+}
+.menu-card--3 {
+  animation-delay: 600ms;
+}
+.menu-card--4 {
+  animation-delay: 800ms;
+}
+.menu-card--5 {
+  animation-delay: 1000ms;
+}
+.menu-card--6 {
+  animation-delay: 1200ms;
+}
+.menu-card--7 {
+  animation-delay: 1400ms;
+}
+.menu-card--8 {
+  animation-delay: 1600ms;
+}
+.menu-card--9 {
+  animation-delay: 1800ms;
+}
+.menu-card--10 {
+  animation-delay: 2000ms;
+}
+.menu-card__text {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0px 15px 15px;
 }
 .menu-card__title {
   font-size: 1.1rem;
   font-weight: 500;
-}
-.menu-card__text {
-  display: flex;
-  justify-content: space-between;
 }
 .menu-card__subtitle {
   font-size: 0.93rem;
@@ -343,6 +384,16 @@ a:not([class]) {
 .menu-card__price {
   font-size: 0.93rem;
   font-weight: 700;
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-right: 15px;
+  padding-bottom: 15px;
+}
+
+.menu-card,
+.menu-card__text {
+  overflow: hidden;
 }
 
 .menu-card__title,
@@ -350,6 +401,22 @@ a:not([class]) {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.menu-card__checked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background: #99E2D0;
+  width: 59px;
+  height: 69px;
+  margin-right: -59px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+  font-size: 1.5rem;
+  transition-duration: 600ms;
 }
 
 .button {

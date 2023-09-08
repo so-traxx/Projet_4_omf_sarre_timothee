@@ -24,3 +24,22 @@
     transform: scale(1.05);
   }
 }
+
+//animation des cards restaurant check
+
+.menu-card:hover .menu-card__checked {
+  margin-right: 0;
+}
+
+//animation des cartes restaurant qui aparaissent avec un délai 
+
+@keyframes appear-delay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+//loader

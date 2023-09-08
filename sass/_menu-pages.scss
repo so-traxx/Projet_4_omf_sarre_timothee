@@ -26,7 +26,6 @@
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     position: relative;
-    z-index: 1;
     margin-top:-55px;
 }
 .main-title {
@@ -68,16 +67,23 @@
 }
 .menu-card {
     @include base-card;
-    @include flex-column;
+    display: flex;
     height: 69px;
-    padding: 15px;
-    &__title{
-        font-size: 1.1rem;
-        font-weight: 500;
+    cursor: pointer;
+    animation: appear-delay 2000ms ease-in-out both;
+    @for $i from 1 through 10 {
+        &--#{$i} {
+            animation-delay: 200ms * $i;
+        }
     }
     &__text{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        padding: 15px 0px 15px 15px;
+    }
+    &__title{
+        font-size: 1.1rem;
+        font-weight: 500;
     }
     &__subtitle{
         font-size: 0.93rem;
@@ -86,13 +92,35 @@
     &__price{
         font-size: 0.93rem;
         font-weight: 700;
+        display: flex;
+        align-items: flex-end;
+        margin-left: auto;
+        margin-right: 15px;
+        padding-bottom: 15px;
     }
+}
+.menu-card,
+.menu-card__text {
+    overflow: hidden;
 }
 .menu-card__title,
 .menu-card__subtitle {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+.menu-card__checked {
+    @include flex-center;
+    flex-shrink: 0;
+    background: $tertiary-color;
+    width: 59px;
+    height: 69px;
+    margin-right: -59px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: $white-content;
+    font-size: 1.5rem;
+    transition-duration: 600ms;
 }
 .button {
     display: flex;
