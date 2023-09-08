@@ -1,7 +1,6 @@
 //Responsive Design de la "Home-Page" pour tablette et desktop
 
 @media screen and (min-width:1024px) {
-
     .header__logo {
     height: 96px;
     padding: 30px 0px;
@@ -61,3 +60,49 @@
 }
 
 //Responsive Design des pages restaurant pour tablette et desktop
+
+//tablette
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .main-content,
+    .menu-content {
+        align-items: center;
+        width: 100%;
+    }
+    .menu-card {
+        width: 80%;
+    }
+    .footer {
+        flex-direction: row;
+    }
+    .footer-content {
+        align-items: flex-end;
+    }
+}
+
+//desktop
+
+@media screen and (min-width:1024px) {
+    .header__logo--content-resto {
+        position: relative;
+    }
+    .header__icon-return {
+        position: absolute;
+        left: 32px;
+        top: 37px;
+        @include flex-center;
+    }
+    .header__img {
+        height: 500px;
+    }
+    .main-content {
+        margin: auto;
+        margin-top: -40px;
+        width: 74%;
+        padding: 51px 210px 40px 210px;
+    }
+    .main-title {
+        justify-content: center;
+        white-space: nowrap;
+    }
+}
