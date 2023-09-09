@@ -285,9 +285,9 @@ a:not([class]) {
 
 .main-title {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 40px;
-  padding: 0px 4px;
+  padding: 0px;
 }
 .main-title--title-style {
   font-family: "Shrikhand", cursive;
@@ -549,5 +549,6 @@ a:not([class]) {
   .main-title {
     justify-content: center;
     white-space: nowrap;
+    gap: 24px;
   }
 }/*# sourceMappingURL=style.css.map */
