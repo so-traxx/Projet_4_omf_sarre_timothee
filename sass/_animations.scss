@@ -1,3 +1,27 @@
+//loader
+
+@keyframes dissapear-loading {
+  to{
+    transform: scale(0) 
+  }
+ 
+}
+@keyframes loading {
+  0% {
+    transform: scale(1) rotateY(0);
+    color: $primary-color;
+  }
+  50% {
+    transform: scale(0.3) rotateY(180deg);
+    color: $secondary-color;
+  }
+  100% {
+    transform: scale(1) rotateY(360deg);
+    color: $tertiary-color;
+  }
+ 
+}
+
 //animation du coeur
 
 .heart--liked {
@@ -41,5 +65,3 @@
     opacity: 1;
   }
 }
-
-//loader
